@@ -1,0 +1,44 @@
+local G2L = {};
+
+-- StarterGui.Temp
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["IgnoreGuiInset"] = true;
+G2L["1"]["DisplayOrder"] = 1;
+G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+G2L["1"]["Name"] = [[Temp]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.Temp.Welcome
+G2L["2"] = Instance.new("TextLabel", G2L["1"]);
+G2L["2"]["TextWrapped"] = true;
+G2L["2"]["ZIndex"] = 1290371238;
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["TextSize"] = 18;
+G2L["2"]["TextTransparency"] = 1;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(77, 46, 100);
+G2L["2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["2"]["Size"] = UDim2.new(0, 50, 0, 50);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Text"] = [[nil]];
+G2L["2"]["Name"] = [[Welcome]];
+G2L["2"]["Position"] = UDim2.new(0.483, 0, 1.5, 0);
+
+
+-- StarterGui.Temp.Welcome.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+G2L["3"]["CornerRadius"] = UDim.new(0, 13);
+
+
+-- StarterGui.Temp.Welcome.UIStroke
+G2L["4"] = Instance.new("UIStroke", G2L["2"]);
+G2L["4"]["Transparency"] = 0.5;
+G2L["4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["4"]["Thickness"] = 1.5;
+
+
+
+return G2L["1"]
