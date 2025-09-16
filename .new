@@ -1,0 +1,384 @@
+local G2L = {};
+
+-- StarterGui.AutoTech
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["IgnoreGuiInset"] = true;
+G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+G2L["1"]["Name"] = [[AutoTech]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.AutoTech.Father
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["2"]["Size"] = UDim2.new(0, 568, 0, 304);
+G2L["2"]["Position"] = UDim2.new(0.5, 0, 0.68, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[Father]];
+G2L["2"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.AutoTech.Father.Soon
+G2L["3"] = Instance.new("TextLabel", G2L["2"]);
+G2L["3"]["TextWrapped"] = true;
+G2L["3"]["TextStrokeTransparency"] = 0;
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["TextSize"] = 14;
+G2L["3"]["TextScaled"] = true;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["FontFace"] = Font.new([[rbxassetid://11322590111]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
+G2L["3"]["TextColor3"] = Color3.fromRGB(140, 152, 255);
+G2L["3"]["BackgroundTransparency"] = 1;
+G2L["3"]["Size"] = UDim2.new(0, 125, 0, 38);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Text"] = [[More Soon :)]];
+G2L["3"]["Name"] = [[Soon]];
+G2L["3"]["Position"] = UDim2.new(0.74032, 0, 0.99671, 0);
+
+
+-- StarterGui.AutoTech.Father.Soon.UIGradient
+G2L["4"] = Instance.new("UIGradient", G2L["3"]);
+G2L["4"]["Rotation"] = 90;
+G2L["4"]["Offset"] = Vector2.new(0, 0.2);
+G2L["4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(135, 135, 135))};
+
+
+-- StarterGui.AutoTech.Father.Slashes
+G2L["5"] = Instance.new("Folder", G2L["2"]);
+G2L["5"]["Name"] = [[Slashes]];
+
+
+-- StarterGui.AutoTech.Father.Main
+G2L["6"] = Instance.new("Folder", G2L["2"]);
+G2L["6"]["Name"] = [[Main]];
+
+
+-- StarterGui.AutoTech.Father.Main.Title
+G2L["7"] = Instance.new("ImageLabel", G2L["6"]);
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["ScaleType"] = Enum.ScaleType.Tile;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(7, 82, 201);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["7"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["7"]["Image"] = [[rbxassetid://14780322185]];
+G2L["7"]["TileSize"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["7"]["Size"] = UDim2.new(0, 200, 0, 43);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["Name"] = [[Title]];
+G2L["7"]["Position"] = UDim2.new(0.5, 0, 0.14072, 0);
+
+
+-- StarterGui.AutoTech.Father.Main.Title.Text
+G2L["8"] = Instance.new("TextLabel", G2L["7"]);
+G2L["8"]["TextStrokeTransparency"] = 0;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["BackgroundTransparency"] = 1;
+G2L["8"]["RichText"] = true;
+G2L["8"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[ZENITHAMV_ TSB AUTO TECH]];
+G2L["8"]["Name"] = [[Text]];
+
+
+-- StarterGui.AutoTech.Father.Main.Title.Text.UIGradient
+G2L["9"] = Instance.new("UIGradient", G2L["8"]);
+G2L["9"]["Rotation"] = 270;
+G2L["9"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 154, 103)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 34))};
+
+
+-- StarterGui.AutoTech.Father.Main.Title.UICorner
+G2L["a"] = Instance.new("UICorner", G2L["7"]);
+
+
+
+-- StarterGui.AutoTech.Father.Main.Title.UIStroke
+G2L["b"] = Instance.new("UIStroke", G2L["7"]);
+G2L["b"]["Transparency"] = 0.7;
+G2L["b"]["Thickness"] = 1.5;
+
+
+-- StarterGui.AutoTech.Father.Main.Close
+G2L["c"] = Instance.new("ImageButton", G2L["6"]);
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["ScaleType"] = Enum.ScaleType.Fit;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(10, 199, 47);
+G2L["c"]["Selectable"] = false;
+G2L["c"]["ZIndex"] = 7;
+G2L["c"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["c"]["Image"] = [[rbxassetid://128381833504586]];
+G2L["c"]["Size"] = UDim2.new(0, 42, 0, 42);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Name"] = [[Close]];
+G2L["c"]["Position"] = UDim2.new(0.90845, 0, 0.23283, 0);
+
+
+-- StarterGui.AutoTech.Father.Main.Close.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["c"]);
+G2L["d"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.AutoTech.Father.Main.Close.C
+G2L["e"] = Instance.new("UIStroke", G2L["c"]);
+G2L["e"]["Transparency"] = 0.2;
+G2L["e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["e"]["Name"] = [[C]];
+G2L["e"]["Thickness"] = 1.5;
+G2L["e"]["Color"] = Color3.fromRGB(67, 140, 22);
+
+
+-- StarterGui.AutoTech.Father.Main.Camera
+G2L["f"] = Instance.new("TextLabel", G2L["6"]);
+G2L["f"]["TextWrapped"] = true;
+G2L["f"]["ZIndex"] = 7;
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["TextScaled"] = true;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(201, 2, 5);
+G2L["f"]["FontFace"] = Font.new([[rbxassetid://12187375716]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["BackgroundTransparency"] = 1;
+G2L["f"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["f"]["Size"] = UDim2.new(0, 144, 0, 43);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[THIS SCRIPT DOES NOT MANIPULATE THE PLAYER'S CAMERA.]];
+G2L["f"]["Name"] = [[Camera]];
+G2L["f"]["Position"] = UDim2.new(0.83231, 0, 0.14072, 0);
+
+
+-- StarterGui.AutoTech.Father.Main.Holder
+G2L["10"] = Instance.new("ImageLabel", G2L["6"]);
+G2L["10"]["ZIndex"] = 3;
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(7, 82, 201);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["10"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["10"]["Image"] = [[rbxassetid://6310745864]];
+G2L["10"]["Size"] = UDim2.new(0, 523, 0, 261);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["BackgroundTransparency"] = 1;
+G2L["10"]["Name"] = [[Holder]];
+G2L["10"]["Position"] = UDim2.new(0.5, 0, 0.57, 0);
+
+
+-- StarterGui.AutoTech.Father.Main.Holder.UIListLayout
+G2L["11"] = Instance.new("UIListLayout", G2L["10"]);
+G2L["11"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["11"]["Padding"] = UDim.new(0, 10);
+G2L["11"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+G2L["11"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.AutoTech.Father.Main.Holder.UIGradient
+G2L["12"] = Instance.new("UIGradient", G2L["10"]);
+G2L["12"]["Rotation"] = 60;
+G2L["12"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(135, 135, 135))};
+
+
+-- StarterGui.AutoTech.Father.Main.Holder.UICorner
+G2L["13"] = Instance.new("UICorner", G2L["10"]);
+
+
+
+-- StarterGui.AutoTech.Father.Main.Holder.UIStroke
+G2L["14"] = Instance.new("UIStroke", G2L["10"]);
+G2L["14"]["Transparency"] = 0.7;
+G2L["14"]["Thickness"] = 1.5;
+
+
+-- StarterGui.AutoTech.Father.Main.Reminder
+G2L["15"] = Instance.new("TextLabel", G2L["6"]);
+G2L["15"]["TextWrapped"] = true;
+G2L["15"]["ZIndex"] = 7;
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["TextScaled"] = true;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(201, 2, 5);
+G2L["15"]["FontFace"] = Font.new([[rbxassetid://12187375716]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["BackgroundTransparency"] = 1;
+G2L["15"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["15"]["Size"] = UDim2.new(0, 144, 0, 43);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Text"] = [[Click On P To Open The GUI After Closing It]];
+G2L["15"]["Name"] = [[Reminder]];
+G2L["15"]["Position"] = UDim2.new(0.16505, 0, 0.14072, 0);
+
+
+-- StarterGui.AutoTech.Father.Notifs
+G2L["16"] = Instance.new("Folder", G2L["2"]);
+G2L["16"]["Name"] = [[Notifs]];
+
+
+-- StarterGui.AutoTech.Config
+G2L["17"] = Instance.new("Configuration", G2L["1"]);
+G2L["17"]["Name"] = [[Config]];
+-- Attributes
+G2L["17"]:SetAttribute([[SlashID]], 15788309952);
+
+
+-- StarterGui.AutoTech.Config.Notif
+G2L["18"] = Instance.new("TextLabel", G2L["17"]);
+G2L["18"]["TextWrapped"] = true;
+G2L["18"]["TextStrokeTransparency"] = 0;
+G2L["18"]["ZIndex"] = 10;
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["TextSize"] = 14;
+G2L["18"]["TextScaled"] = true;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(142, 0, 3);
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/IndieFlower.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["18"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["18"]["BackgroundTransparency"] = 1;
+G2L["18"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["18"]["Size"] = UDim2.new(0, 279, 0, 50);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Text"] = [[THE nil KEY IS ALREADY BEING USED]];
+G2L["18"]["Name"] = [[Notif]];
+G2L["18"]["Position"] = UDim2.new(0.50616, 0, 1.11863, 0);
+
+
+-- StarterGui.AutoTech.Config.Tech
+G2L["19"] = Instance.new("ImageLabel", G2L["17"]);
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(89, 89, 89);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["19"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["19"]["Image"] = [[rbxassetid://116336124937969]];
+G2L["19"]["Size"] = UDim2.new(0, 271, 0, 59);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["BackgroundTransparency"] = 1;
+G2L["19"]["Name"] = [[Tech]];
+G2L["19"]["Position"] = UDim2.new(0.52868, 0, 0.38697, 0);
+
+
+-- StarterGui.AutoTech.Config.Tech.UICorner
+G2L["1a"] = Instance.new("UICorner", G2L["19"]);
+G2L["1a"]["CornerRadius"] = UDim.new(0, 20);
+
+
+-- StarterGui.AutoTech.Config.Tech.TechName
+G2L["1b"] = Instance.new("TextLabel", G2L["19"]);
+G2L["1b"]["TextWrapped"] = true;
+G2L["1b"]["TextStrokeTransparency"] = 0.5;
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["TextSize"] = 32;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Guru.json]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["BackgroundTransparency"] = 1;
+G2L["1b"]["Size"] = UDim2.new(0, 167, 0, 42);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Text"] = [[Tech Name]];
+G2L["1b"]["Name"] = [[TechName]];
+G2L["1b"]["Position"] = UDim2.new(0.04905, 0, 0.13536, 0);
+
+
+-- StarterGui.AutoTech.Config.Tech.TechName.UIGradient
+G2L["1c"] = Instance.new("UIGradient", G2L["1b"]);
+G2L["1c"]["Rotation"] = 270;
+G2L["1c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(35, 250, 96)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(25, 132, 60))};
+
+
+-- StarterGui.AutoTech.Config.Tech.TechName.Key
+G2L["1d"] = Instance.new("TextBox", G2L["1b"]);
+G2L["1d"]["CursorPosition"] = -1;
+G2L["1d"]["Active"] = false;
+G2L["1d"]["TextStrokeTransparency"] = 0;
+G2L["1d"]["Name"] = [[Key]];
+G2L["1d"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["TextWrapped"] = true;
+G2L["1d"]["TextSize"] = 25;
+G2L["1d"]["TextColor3"] = Color3.fromRGB(11, 248, 240);
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Merriweather.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1d"]["Selectable"] = false;
+G2L["1d"]["PlaceholderText"] = [[...]];
+G2L["1d"]["Size"] = UDim2.new(0, 58, 0, 42);
+G2L["1d"]["Position"] = UDim2.new(1.03605, 0, 0, 0);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Text"] = [[]];
+G2L["1d"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.AutoTech.Config.Tech.TechName.Key.UIGradient
+G2L["1e"] = Instance.new("UIGradient", G2L["1d"]);
+G2L["1e"]["Rotation"] = 45;
+G2L["1e"]["Offset"] = Vector2.new(0.3, 0);
+G2L["1e"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(250, 250, 250)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(36, 24, 107))};
+
+
+-- StarterGui.AutoTech.Config.Tech.TechName.Edit
+G2L["1f"] = Instance.new("TextButton", G2L["1b"]);
+G2L["1f"]["TextWrapped"] = true;
+G2L["1f"]["Active"] = false;
+G2L["1f"]["TextStrokeTransparency"] = 0;
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["TextSize"] = 14;
+G2L["1f"]["TextScaled"] = true;
+G2L["1f"]["TextColor3"] = Color3.fromRGB(248, 0, 5);
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+G2L["1f"]["Selectable"] = false;
+G2L["1f"]["BackgroundTransparency"] = 1;
+G2L["1f"]["Size"] = UDim2.new(0, 47, 0, 42);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["Text"] = [[EDIT]];
+G2L["1f"]["Name"] = [[Edit]];
+G2L["1f"]["Position"] = UDim2.new(1.54192, 0, 0, 0);
+
+
+-- StarterGui.AutoTech.Config.Tech.TechName.Edit.UIGradient
+G2L["20"] = Instance.new("UIGradient", G2L["1f"]);
+G2L["20"]["Rotation"] = 45;
+G2L["20"]["Offset"] = Vector2.new(0.3, 0);
+G2L["20"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(250, 250, 250)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(36, 24, 107))};
+
+
+-- StarterGui.AutoTech.Config.Tech.Key
+G2L["21"] = Instance.new("StringValue", G2L["19"]);
+G2L["21"]["Name"] = [[Key]];
+
+
+-- StarterGui.AutoTech.Config.Slash
+G2L["22"] = Instance.new("Sound", G2L["17"]);
+G2L["22"]["RollOffMode"] = Enum.RollOffMode.InverseTapered;
+G2L["22"]["Name"] = [[Slash]];
+G2L["22"]["SoundId"] = [[rbxassetid://935843979]];
+
+
+-- StarterGui.AutoTech.Config.Talk
+G2L["23"] = Instance.new("Sound", G2L["17"]);
+G2L["23"]["RollOffMode"] = Enum.RollOffMode.InverseTapered;
+G2L["23"]["Name"] = [[Talk]];
+G2L["23"]["SoundId"] = [[rbxassetid://358280695]];
+
+
+-- StarterGui.AutoTech.Config.Error
+G2L["24"] = Instance.new("Sound", G2L["17"]);
+G2L["24"]["RollOffMode"] = Enum.RollOffMode.InverseTapered;
+G2L["24"]["Name"] = [[Error]];
+G2L["24"]["SoundId"] = [[rbxassetid://9066167010]];
+
+
+-- StarterGui.AutoTech.Config.SlashImage
+G2L["25"] = Instance.new("ImageLabel", G2L["17"]);
+G2L["25"]["ZIndex"] = 20;
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["25"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["25"]["Image"] = [[rbxassetid://15788309933]];
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["BackgroundTransparency"] = 1;
+G2L["25"]["Name"] = [[SlashImage]];
+G2L["25"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+
+return G2L["1"]
